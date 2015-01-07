@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>getupstandup</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <div class="header">
+          <ul class="nav nav-pills pull-right">
+          <li><p class="">Inspired by <a href="https://pragprog.com/book/jkthp/the-healthy-programmer">The Healthy Programmer</a></p></li>
+        </ul>
+        <h3 class="text-muted">getupstandup</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h4>A Ridiculously Easy Editable List</h4>
+        <div style="text-align:left;background-color:white;border:1px solid;padding:10px;border-radius:5px;" contenteditable="true">
+            Learn Something New </br>
+            Create a Map </br>
+            Write a Chapter </br>
+        </div>
+
+        <h4>Choose Break Reminder...</h4>
+        <select id="interval" class="form-control" placeholder="time interval">
+            <option value="Infinity">Leave Me Alone</option>
+            <option value="3600000">One Hour</option>
+            <option value="1800000">Every 30 Minutes</option>
+            <option value="1200000">Every 20 Minutes</option>
+            <option value="298999">Every 5 Minutes</option>
+            <option value="30000">Every 30 seconds</option>
+        </select>
+        <h1 id="countdown"></h1>
+        <div id="playerContainer">
+          <div id="player"></div>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <p><span class="glyphicon glyphicon-glass"></span> served to you by spatialbrew</p>
+      </div>
+
+    </div> <!--container end -->
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/cow.js"></script>
+        <script src="scripts/tock.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="http://www.youtube.com/player_api"></script>
+        <!-- endbuild -->
+</body>
+</html>
