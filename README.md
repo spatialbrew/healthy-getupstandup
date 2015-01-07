@@ -1,6 +1,9 @@
 # healthy-getupstandup
 Inspired by The Healthy Programmer, a web app that reminds me to take a break from time to time with a Bob Marley song.  
 
+#Why?
+Because writing JavaScript is fun, and sometimes I forget to take a break!  Also I wanted to play with the items listed below.    
+
 #Scaffolded with:
 https://github.com/yeoman/generator-webapp
 
